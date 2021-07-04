@@ -1,0 +1,42 @@
+﻿@model FootballTeamProject.Models.Team
+@{
+    ViewBag.Title = "UpdateTeam";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+
+    <div>
+
+        <label>NAME</label>
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+    </div>
+    <div>
+
+        <label>SINCE</label>
+        @Html.TextBoxFor(x => x.Since, new { @class = "form-control" })
+
+    </div>
+    <div>
+
+        <label>COUNTRY</label>
+        @Html.TextBoxFor(x => x.Country, new { @class = "form-control" })
+
+    </div>
+    <div>
+
+        <label>BUDGET</label>
+        @Html.TextBoxFor(x => x.Budget, new { @class = "form-control" })
+
+    </div>
+    <div>
+
+        <label>SALARY</label>
+        @Html.TextBoxFor(x => x.Salary, new { @class = "form-control" })
+
+    </div>
+    <button class="btn btn-primary">UPDATE TEAM</button>
+
+</form>
+

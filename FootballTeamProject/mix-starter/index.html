@@ -1,0 +1,166 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Football Manager Designer</title>
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets/css/style-starter.css">
+  <!-- web fonts -->
+  <link href="//fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+  <!-- /web fonts -->
+</head>
+
+<body>
+  <!-- header -->
+  <header class="w3l-header">
+    <div class="hero-header-11">
+      <div class="hero-header-11-content">
+        <div class="container">
+          <nav class="navbar navbar-expand-xl navbar-light py-sm-2 py-1 px-0">
+            <a class="navbar-brand editContent" href="index.html">Mix</a>
+            <!-- if logo is image enable this   
+				<a class="navbar-brand" href="#index.html">
+						<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+				</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fa fa-bars"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#service">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#gallery">Work</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Blocks
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="index.html#stats">Fun Facts</a>
+                    <a class="dropdown-item" href="index.html#testimonials">Testimonials</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- //header -->
+  <!--  Main banner section -->
+  <section class="w3l-main-banner">
+    <div class="companies20-content">
+      <div class="companies-wrapper">
+        <div class="item">
+          <li>
+            <div class="slider-info banner-view">
+              <div class="banner-info container">
+                <h3 class="banner-text"><small>Hello, I’m</small><br>
+                  Doğukan
+                </h3>
+                <p class="my-4 mb-5">Computer Engineer</p><br>
+                <a href="#gallery" class="btn btn-primary theme-button mr-3">My Work</a>
+                <a href="#about.html" class="btn btn-outline-primary theme-button">Hire Me</a>
+              </div>
+            </div>
+          </li>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  //Main banner section -->
+  
+  
+ 
+  <!-- jQuery and Bootstrap JS -->
+  <script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Template JavaScript -->
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.popup-with-zoom-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+      $('.popup-with-move-anim').magnificPopup({
+        type: 'inline',
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-slide-bottom'
+      });
+    });
+  </script>
+
+  <!-- disable body scroll which navbar is in active -->
+  <script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script>
+  <!-- disable body scroll which navbar is in active -->
+
+
+  <script src="assets/js/smartphoto.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sm = new SmartPhoto(".js-img-viwer", {
+        showAnimation: false
+      });
+      // sm.destroy();
+    });
+  </script>
+
+
+</body>
+
+</html>

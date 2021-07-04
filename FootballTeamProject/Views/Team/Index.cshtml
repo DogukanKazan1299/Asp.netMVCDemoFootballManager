@@ -1,0 +1,32 @@
+﻿@using FootballTeamProject.Models
+@model List<Team>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MyLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <tr>
+        <th>NAME</th>
+        <th>FOUNDATION</th>
+        <th>COUNTRY</th>
+        <th>BUDGET</th>
+        <th>SALARY</th>
+        <th>DELETE</th>
+        <th>UPDATE</th>
+
+    </tr>
+    @foreach(var x in Model) { 
+    <tr>
+        <td>@x.Name</td>
+        <td>@x.Since</td>
+        <td>@x.Country</td>
+        <td>@x.Budget</td>
+        <td>@x.Salary</td>
+        <td><a href="/Team/DeleteTeam/@x.id" class="btn btn-danger">DELETE</td>
+        <td><a href="/Team/UpdateTeam/@x.id" class="btn btn-warning">UPDATE</td>
+    </tr>
+    }
+
+</table>
+
